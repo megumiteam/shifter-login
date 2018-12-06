@@ -139,7 +139,7 @@ function sl_autologin_via_url() {
 		$wp_hasher = new PasswordHash(8, TRUE);
 		$time = time();
 
-		if ( ! $wp_hasher->CheckPassword($token . $hash_meta_expiration, $hash_meta) || $hash_meta_expiration < $time || ! wp_verify_nonce( $nonce, 'sl_passwordless_login_request' ) ){
+		if ( ! $wp_hasher->CheckPassword($token . $hash_meta_expiration, $hash_meta) || $hash_meta_expiration < $time || ! wp_verify_nonce( $nonce, 'sl_login_request' ) ){
 			wp_redirect( $current_page_url . '?sl_error_token=true' );
 			exit;
 		} else {

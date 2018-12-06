@@ -34,7 +34,7 @@ class Shifter_Login_CLI {
       WP_CLI::error( $error_string );
     }
 
-    $output = sl_magic_link($email_account, wp_create_nonce('sl_passwordless_login_request'));
+    $output = sl_magic_link($email_account, wp_create_nonce('sl_login_request'));
 
     WP_CLI::success( $output );
 
