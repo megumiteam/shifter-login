@@ -12,6 +12,6 @@ Login command paired with a valid and registered user email will return a token 
 
 `wp shifter-login login`
 
-| Argument     | Description                                | Example                                         |
-|--------------|--------------------------------------------|-------------------------------------------------|
-| --user_email | A valid user and registered email address  | wp shifer-login login --user_email=foo@bar.baz  |
+| Argument       | Description                                | Example                                          |
+|----------------|--------------------------------------------|--------------------------------------------------|
+| `--user_email` | A valid user and registered email address  | `wp shifer-login login --user_email=foo@bar.baz` |
